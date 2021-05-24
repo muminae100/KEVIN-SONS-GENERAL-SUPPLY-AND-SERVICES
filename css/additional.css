@@ -1,0 +1,21 @@
+.location-img{
+   padding: 20px;
+   height: 400px;
+}
+.call-us{
+    color: white;
+}
+.gallery-image{
+    opacity: 1;
+}
+.gallery-image:hover{
+    opacity: .8;
+}
+.switcher-inner p{
+    display: none;
+}
+@media screen and (max-width:600px) {
+    .location-img{
+        height: auto;
+    }
+}
