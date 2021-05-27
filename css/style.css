@@ -335,7 +335,7 @@ img {
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
-  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -363,11 +363,6 @@ img {
 
 .fancybox-wrap {
   z-index: 99999 !important;
-}
-
-/**** style for box layout ***/
-.box-layout {
-  /*** style for box layout ***/
 }
 
 @media screen and (min-width: 1200px) {
@@ -633,7 +628,8 @@ img {
 	page title
 ******************************/
 .page-title {
-  background: url("../images/electronic_gadgets.jpeg") center center/cover no-repeat local;
+  /* background: url("../images/electronic_gadgets.jpeg") center center/cover no-repeat local; */
+  background-color: #292b2c;
   height: 415px;
   position: relative;
   width: 100%;
@@ -697,7 +693,6 @@ img {
 
 @media screen and (min-width: 992px) {
   .page-title h2 {
-    display: inline-block;
     float: left;
   }
 }
@@ -726,7 +721,6 @@ img {
 
 @media screen and (min-width: 992px) {
   .page-title .breadcrumb {
-    display: inline-block;
     float: right;
     margin-top: 10px;
   }
@@ -3456,7 +3450,7 @@ img {
 }
 
 .testimonials-section .testimonials-grids, .testimonials-section-s2 .testimonials-grids {
-  positition: relative;
+  position: relative;
   margin-left: -45px;
 }
 
@@ -4802,7 +4796,7 @@ img {
   position: absolute;
   bottom: 10px;
   opacity: 0;
-  visibilty: hidden;
+  visibility: hidden;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -5307,7 +5301,7 @@ img {
 }
 
 .work-process-section .work-process-content {
-  overlfow: hidden;
+  overflow: hidden;
   margin-top: 90px;
 }
 
@@ -6065,7 +6059,7 @@ img {
   position: absolute;
   bottom: 10px;
   opacity: 0;
-  visibilty: hidden;
+  visibility: hidden;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -7322,7 +7316,6 @@ img {
 }
 
 .blog-single-section .tag-share > div {
-  display: inline-block;
   float: left;
 }
 

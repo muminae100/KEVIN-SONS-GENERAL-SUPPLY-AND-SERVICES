@@ -1,3 +1,6 @@
+a{
+    text-decoration: none;
+}
 .location-img{
    padding: 20px;
    height: 400px;
@@ -5,14 +8,29 @@
 .call-us{
     color: white;
 }
+#all_products a{
+    border-top: none;
+    border-bottom: none;
+}
+.products-and-services{
+    margin-top: 20px;
+}
+.products-and-services ul li i{
+    padding: 10px;
+    margin: 5px;
+    background-color: #0B5688;
+    color: white;
+}
 .contact_us_side_section{
     margin-top: 15px;
 }
 .list-group-item{
-    border-left: 3px solid navy;
+    border-left: 5px solid #0B5688;;
+    border-right: 5px solid #0B5688;;
 }
 .list-group-item:hover{
-    border-left: 3px solid orangered;
+    border-left: 5px solid orangered;
+    border-right: 5px solid orangered;
 }
 .gallery-image{
     transition: transform .2s; /* Animation */
