@@ -136,7 +136,17 @@
         </section>
         <!-- end about-section-s3 -->
 
-
+        <div>
+            {% with messages = get_flashed_messages(with_categories = true) %}
+                {% if messages %}
+                    {% for category,message in messages %}
+                        <div class="alert alert-{{category}}">
+                            {{message}}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            </div>
         <!-- start contact-section -->
         <section id="contact_section" class="contact-section section-padding">
             <div class="container">
@@ -174,7 +184,7 @@
                             </div>
                             <div>
                                 <div class="form-group">
-                                    {{ form.email.label(class="form-control-label") }}
+                                    {{ form.email.label(class="form-control-label text-light") }}
                                     {% if form.email.errors %}
                                     {{ form.email(class="form-control form-control-lg is-invalid") }}
                                     <div class="invalid-feedback">
@@ -202,8 +212,23 @@
                                     {% endif %}
                                 </div>
                             </div>
+                            <div>
+                                <div class="form-group">
+                                    {{ form.producttype.label(class="form-control-label") }}
+                                    {% if form.producttype.errors %}
+                                    {{ form.producttype(class="form-control form-control-lg is-invalid") }}
+                                    <div class="invalid-feedback">
+                                        {% for error in form.producttype.errors %}
+                                            <span>{{ error }}</span>
+                                        {% endfor %}
+                                    </div>
+                                    {% else %}
+                                        {{ form.producttype(class="form-control form-control-lg") }}
+                                    {% endif %}
+                                </div>
+                            </div>
                             
-							<div class="col col-xs-12">
+							<div>
                                 <div class="form-group">
                                     {{ form.message.label(class="form-control-label") }}
                                     {% if form.message.errors %}
@@ -220,9 +245,11 @@
                             </div>
                             <div>
                                 <div class="form-group">
-                                    {{ form.submit(class="btn") }}
+                                    {{ form.submit(class="btn btn-primary btn-lg") }}
                                 </div>
+                               
                             </div>
+                            
                         </form>
                         <p class="call-us">--- or ---</p>
                         <p class="call-us">Call us</p>

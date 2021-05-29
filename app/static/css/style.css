@@ -6985,7 +6985,7 @@ img {
   }
 }
 
-.contact-pg-contact-section .submit-btn button {
+.contact-pg-contact-section .submit-btn{
   width: 100%;
   border: 0;
   outline: 0;
@@ -7034,9 +7034,6 @@ img {
   top: 4px;
 }
 
-.contact-pg-contact-section #loader {
-  color: #ff5e14;
-}
 
 /*--------------------------------------------------------------
 	#blog page

@@ -18,50 +18,108 @@
         </section>        
         <!-- end page-title -->    
 
-
+        <div>
+            {% with messages = get_flashed_messages(with_categories = true) %}
+                {% if messages %}
+                    {% for category,message in messages %}
+                        <div class="alert alert-{{category}}">
+                            {{message}}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            </div>
         <!-- start contact-pg-contact-section -->  
-        <section class="contact-pg-contact-section section-padding">
+        <section class="section-padding">
             <div class="container">
                 <div class="row">
                     <div class="col col-lg-8 col-sm-8">
-                        <div class="contact-form">
-                            <form class="row contact-validation-active"  id="contact-form-s2">
-                                <div class="col col-sm-6">
-                                    <label for="f-name">First Name</label>
-                                    <input type="text" class="form-control" id="f-name" name="f_name">
-                                </div>
-                                <div class="col col-sm-6">
-                                    <label for="l-name">Last Name</label>
-                                    <input type="text" class="form-control" id="l-name" name="l_name">
-                                </div>
-                                <div class="col col-sm-6">
-                                    <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="email" name="email">
-                                </div>
-                                <div class="col col-sm-6">
-                                    <label for="phone">Phone No.</label>
-                                    <input type="text" class="form-control" id="phone" name="phone">
-                                </div>
-                                <div class="col col-xs-12">
-                                    <label for="message">Message</label>
-                                    <textarea id="message" name="note" class="form-control"></textarea>
-                                </div>
-                                <div class="col col-xs-12">
-                                    <div class="submit-btn">
-                                        <button type="submit" class="theme-btn-s2">Submit</button>
-                                        <div id="loader">
-                                            <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
-                                        </div>
+                        <form method="POST"  action="">
+                            {{ form.hidden_tag() }}
+                            <div>
+                                <div class="form-group">
+                                    {{ form.fullname.label(class="form-control-label") }}
+                                    {% if form.fullname.errors %}
+                                    {{ form.fullname(class="form-control form-control-lg is-invalid") }}
+                                    <div class="invalid-feedback">
+                                        {% for error in form.fullname.errors %}
+                                            <span>{{ error }}</span>
+                                        {% endfor %}
                                     </div>
+                                    {% else %}
+                                        {{ form.fullname(class="form-control form-control-lg") }}
+                                    {% endif %}
                                 </div>
-                                <div class="col col-xs-12">
-                                    <div class="error-handling-messages">
-                                        <div id="success">Thank you</div>
-                                        <div id="error"> Error occurred while sending email. Please try again later. </div>
+                            </div>
+                            <div>
+                                <div class="form-group">
+                                    {{ form.email.label(class="form-control-label text-light") }}
+                                    {% if form.email.errors %}
+                                    {{ form.email(class="form-control form-control-lg is-invalid") }}
+                                    <div class="invalid-feedback">
+                                        {% for error in form.email.errors %}
+                                            <span>{{ error }}</span>
+                                        {% endfor %}
                                     </div>
+                                    {% else %}
+                                        {{ form.email(class="form-control form-control-lg") }}
+                                    {% endif %}
                                 </div>
-                            </form>
-                        </div>
+                            </div>
+                            <div>
+                                <div class="form-group">
+                                    {{ form.phonenumber.label(class="form-control-label") }}
+                                    {% if form.phonenumber.errors %}
+                                    {{ form.phonenumber(class="form-control form-control-lg is-invalid") }}
+                                    <div class="invalid-feedback">
+                                        {% for error in form.phonenumber.errors %}
+                                            <span>{{ error }}</span>
+                                        {% endfor %}
+                                    </div>
+                                    {% else %}
+                                        {{ form.phonenumber(class="form-control form-control-lg") }}
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div>
+                                <div class="form-group">
+                                    {{ form.producttype.label(class="form-control-label") }}
+                                    {% if form.producttype.errors %}
+                                    {{ form.producttype(class="form-control form-control-lg is-invalid") }}
+                                    <div class="invalid-feedback">
+                                        {% for error in form.producttype.errors %}
+                                            <span>{{ error }}</span>
+                                        {% endfor %}
+                                    </div>
+                                    {% else %}
+                                        {{ form.producttype(class="form-control form-control-lg") }}
+                                    {% endif %}
+                                </div>
+                            </div>
+                            
+							<div>
+                                <div class="form-group">
+                                    {{ form.message.label(class="form-control-label") }}
+                                    {% if form.message.errors %}
+                                    {{ form.message(class="form-control form-control-lg is-invalid") }}
+                                    <div class="invalid-feedback">
+                                        {% for error in form.message.errors %}
+                                            <span>{{ error }}</span>
+                                        {% endfor %}
+                                    </div>
+                                    {% else %}
+                                        {{ form.message(class="form-control form-control-lg") }}
+                                    {% endif %}
+                                </div>
+                            </div>
+                           <div class="submit-btn">
+                                <div class="form-group">
+                                    {{ form.submit(class="btn btn-primary") }}
+                                </div>
+                               
+                            </div>
+                            
+                        </form>
                     </div>
                     <div class="col col-lg-3 col-sm-4">
                         <div class="contact-info">
@@ -69,7 +127,7 @@
                             <p>For any kind of query, contact us with the details below.</p>
                             <ul>
                                 <li><i class="fa fa-phone"></i> <a href="tel:+254742000441">(+254) 742000441</a> </li>
-                                <li><i class="fa fa-envelope"></i> <a href="mailto:info@kevinsonssupply.co.ke"><i class="fa fa-envelope"></i> info@kevinsonssupply.co.ke</a> </li>
+                                <li><i class="fa fa-envelope"></i> <a href="mailto:info@kevinsonssupply.co.ke"> info@kevinsonssupply.co.ke</a> </li>
                                 <li><i class="fa fa-home"></i>Visit the Main office, Nairobi</li>
                             </ul>
                         </div>
