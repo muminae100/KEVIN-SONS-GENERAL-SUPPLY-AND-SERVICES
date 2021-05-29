@@ -15,7 +15,7 @@ Company name/Individual: {fullname}
 '''
     mail.send(msg)
 
-@app.route('/')
+@app.route('/', methods = ['GET','POST'])
 def index():
     form = RequestQuoteForm()
     if form.validate_on_submit():
