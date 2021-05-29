@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+{% block body %}
+
+        <!-- start page-title -->
+        <section class="page-title">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <div class="title-breadcrumb">
+                            <h2>About Kevin & Sons General Supply and Services</h2>
+                            <ol class="breadcrumb">
+                                <li><a href="{{ url_for('index') }}">Home</a></li>
+                                <li>About Company</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </section>        
+        <!-- end page-title -->
+
+
+        <!-- start about-section-s3 -->
+        <section class="about-section-s3 section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-md-6">
+                        <div class="about-img">
+                            <img class="about_us_image" src="{{ url_for('static', filename='images/logo.png') }}" alt>
+                        </div>
+                    </div>
+                    <div class="col col-md-6">
+                        <div class="about-text">
+                            <div class="title">
+                                <span>About Us</span>
+                                <h2>Kevin & Sons General Supply and Services</h2>
+                            </div>
+                            <p><b>Kevin & Sons General Supply and Services</b> specializes in the provision 
+                                of cost effective products and services ranging from electronics products and 
+                                accessories, supply of food stuffs, beverages, office supplies, and stationeries 
+                                among others all over Kenya.(<a href="our_products&services.html">See all products</a> ) We focus on delivering high-impact solutions that incorporate 
+                                customized functionality specific to the client's requirements. <br><br>The combination of 
+                                thorough process, comprehensive experience and expansive creative vision enables us to provide 
+                                services and products that are innovative, usable and reliable. Kevin & Sons General Supply and Services was 
+                                established in response to the growing market demand for high quality innovative solutions 
+                                at affordable prices. Our commitment to refining the development has allowed us to introduce 
+                                a wide range of products as well as customized solutions that enable businesses to simplify 
+                                their operations. With business experience and an ongoing relationship with well established 
+                                companies, our staffs have worked with business leading companies to acquire an in depth 
+                                understanding of the latest technologies and processes. </p>
+                            <div class="signature">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end container -->
+        </section>
+        <!-- end about-section-s3 -->
+        <!-- start cta-section-s2 -->
+        <section class="cta-section-s2">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <div class="cta-text">
+                            <h3>We provide innovative Product Solutions for sustainable progress.</h3>
+                            <a href="{{ url_for('contact') }}" class="theme-btn-s2">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end container -->
+        </section>   
+        <!-- end cta-section-s2 -->
+		<!-- start contact-info-map-section -->
+        <section class="contact-info-map-section">
+            <div class="content">
+                <div class="left-col">
+                    <!-- <div class="location-map" id="map"></div> -->
+                    <img class="location-img" src="{{ url_for('static', filename='images/office_location.png') }}">
+                </div>
+                <div class="right-col">
+                    <div class="inner">
+                        <div class="title-text">
+                            <h3>Drop us a line</h3>
+                            <p>For any kind of query, contact us with the details below.</p>
+                        </div>
+                        <div class="contact-info">
+                            <ul>
+                                <li><i class="fa fa-phone"></i><a href="tel:+254742000441">(+254) 742000441</a></li>
+                                <li><a href="mailto:info@kevinsonssupply.co.ke"><i class="fa fa-envelope"></i>info@kevinsonssupply<br>.co.ke</a></li>
+                                <li><i class="fa fa-home"></i>Main office, Nairobi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end content -->
+        </section>
+        <!-- end contact-info-map-section -->
+
+    {% endblock body %}

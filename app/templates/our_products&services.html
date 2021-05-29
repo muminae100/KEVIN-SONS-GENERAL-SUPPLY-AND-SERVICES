@@ -1,0 +1,937 @@
+{% extends "layout.html" %}
+{% block body %}
+        <!-- start page-title -->
+        <section class="page-title">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <div class="title-breadcrumb">
+                            <h2>Our products & services</h2>
+                            <ol class="breadcrumb">
+                                <li><a href="{{ url_for('index') }}">Home</a></li>
+                                <li>Our products & services</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </section>        
+        <!-- end page-title -->
+
+
+        <!-- start service-singel-section -->
+        <section class="service-singel-section section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-md-8 col-md-push-4">
+                        <div class="service-single-content">
+                            
+                            <div class="title">
+                                <h3>Our products and services</h3>
+                                
+                            </div>
+                            <div class="details">
+                                <p><b>Kevin & Sons General Supply and Services</b>is your number one trusted 
+                                  facilitator and supplier of 
+                                  General Hardware materials,
+                                  
+                                  Office supplies,
+                                  
+                                  Stationery,
+                                  
+                                  Furniture and equipment supplies,
+                                  
+                                  Building construction materials,
+                                  
+                                  Tiling, roofing, water works and plumbing materials,
+                                  
+                                  Road construction material supplies,
+                                  
+                                  Industrial and Institutional chemical supplies,
+                                  
+                                  Pest control and fumigation supplies and services,
+                                  
+                                  Industrial safety,
+                                  
+                                  Steam and steam fittings supplies,
+                                  
+                                  Manufacturing plants and equipment,
+                                  
+                                  Medical supplies and equipment,
+                                  
+                                  Cleaning agents and equipment,
+                                  
+                                  CCTV security and bio-metric door access systems,
+                                  
+                                  Fresh and dry food stuffs & dairy products,
+                                  
+                                  Electrical general supplies and
+                                  
+                                  Electronics and accessories supplies.
+                                  
+                                  ICT and computers and accessories general supplies
+                                  materials and associated services to contractors and end users. 
+                                  We work closely with some of the biggest manufacturers and distributors in Kenya 
+                                  and we give and unrivalled service to customers who require these services on a 
+                                  daily basis. If you have any questions please get in touch with us.</p>
+                    
+                                <a href="{{ url_for('contact') }}" class="theme-btn-s2">Contact us</a>
+                            </div>
+                        </div> <!-- end service content -->
+                        <!-- Start of Products and services gallery  -->
+          <div style="margin-top: 20px;">
+          <h4>Office supplies</h4>
+          <div id="product1" class="row">
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/office-supplies.jpg') }}" >
+                    <img src="{{ url_for('static', filename='images/office-supplies.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Office supplies</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/office_supplies.jpg') }}">
+                    <img src="{{ url_for('static', filename='images/office_supplies.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Best office supplies in Kenya</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                  <div class="thumbnail">
+                    <a href="{{ url_for('static', filename='images/office1.jpg') }}">
+                      <img src="{{ url_for('static', filename='images/office1.jpg') }}" alt="" style="width:100%;height: 150px;">
+                      <div class="caption">
+                        <p>Well equipped office</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+            </div>
+            <h4 id="product2">Stationery</h4>
+            <div class="row">
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/stationery-items.jpeg') }}" >
+                    <img src="{{ url_for('static', filename='images/stationery-items.jpeg') }}" alt="Electronics" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Stationery</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/stationery.png') }}">
+                    <img src="{{ url_for('static', filename='images/stationery.png') }}" alt="Medicalequipment" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Stationery supplies</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/geometrical-sets.jpg') }}">
+                    <img src="{{ url_for('static', filename='images/geometrical-sets.jpg') }}" alt="General supplies" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Geometrical sets</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h4>Furniture and equipment supplies</h4>
+            <div id="product3" class="row">
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/furniture.jpg') }}" >
+                    <img src="{{ url_for('static', filename='images/furniture.jpg') }}" alt="Electronics" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Furniture</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/furniture1.jpeg') }}">
+                    <img src="{{ url_for('static', filename='images/furniture1.jpeg') }}" alt="Medicalequipment" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Furniture equipment supplies</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/furniture2.jpg') }}">
+                    <img src="{{ url_for('static', filename='images/furniture2.jpg') }}" alt="General supplies" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Best furniture equipment supplies in Kenya</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h4>Building construction materials</h4>
+            <div id="product4" class="row">
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/building_construction.jpg') }}" >
+                    <img src="{{ url_for('static', filename='images/building_construction.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Building materials</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/building_construction_materials.jpg') }}">
+                    <img src="{{ url_for('static', filename='images/building_construction_materials.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Building construction material supplies</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/cement.jpg') }}">
+                    <img src="{{ url_for('static', filename='images/cement.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>cement</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h4>Tiling, roofing, water works and plumbing materials</h4>
+            <div id="product5" class="row">
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/tiles.jpg') }}" >
+                    <img src="{{ url_for('static', filename='images/tiles.jpg') }}" alt="Electronics" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Tiles</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/roofs.jpg') }}">
+                    <img src="{{ url_for('static', filename='images/roofs.jpg') }}" alt="Medicalequipment" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Roofing</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/water_works.png') }}">
+                    <img src="{{ url_for('static', filename='images/water_works.png') }}" alt="General supplies" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Water works and plumbing materials</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h4>Road construction material supplies</h4>
+            <div id="product6" class="row">
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/road_construction.jpeg') }}" >
+                    <img src="{{ url_for('static', filename='images/road_construction.jpeg') }}" alt="Electronics" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Road construction materials</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/road.jpg') }}">
+                    <img src="{{ url_for('static', filename='images/road.jpg') }}" alt="Medicalequipment" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Road</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/road_materials.jpg') }}">
+                    <img src="{{ url_for('static', filename='images/road_materials.jpg') }}" alt="General supplies" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Road materials at cheap prices</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h4>Industrial and Institutional chemical supplies</h4>
+            <div id="product7" class="row">
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/industrial_chemicals.jpg') }}" >
+                    <img src="{{ url_for('static', filename='images/industrial_chemicals.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Industrial chemicals</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/chemicals.jpg') }}">
+                    <img src="{{ url_for('static', filename='images/chemicals.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Chemicals</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/chemicals1.jpg') }}">
+                    <img src="{{ url_for('static', filename='images/chemicals1.jpg') }}" alt="General supplies" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Institutional chemicals</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h4>Pest control and fumigation supplies and services</h4>
+            <div id="product8" class="row">
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/pest_control.jpg') }}" >
+                    <img src="{{ url_for('static', filename='images/pest_control.jpg') }}" alt="Electronics" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Pest control and fumigation services</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/pests_drugs.jpg') }}">
+                    <img src="{{ url_for('static', filename='images/pests_drugs.jpg') }}" alt="Medicalequipment" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Pest drugs</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/fumigation.jpg') }}">
+                    <img src="{{ url_for('static', filename='images/fumigation.jpg') }}" alt="General supplies" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Pest control and fumigation services</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h4>Industrial safety</h4>
+            <div id="product9" class="row">
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/industrial-safety.webp') }}" >
+                    <img src="{{ url_for('static', filename='images/industrial-safety.webp') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Indusrial safety</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/indusrial-.jpeg') }}">
+                    <img src="{{ url_for('static', filename='images/indusrial-.jpeg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Indusrial safety</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/industrial_safety.png') }}">
+                    <img src="{{ url_for('static', filename='images/industrial_safety.png') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Industrial safety</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h4>Steam and steam fitting supplies</h4>
+            <div id="product10" class="row">
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/steam_supplies.jpg') }}" >
+                    <img src="{{ url_for('static', filename='images/steam_supplies.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Steam fitting supplies</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/steam_system.jpg') }}">
+                    <img src="{{ url_for('static', filename='images/steam_system.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Steam system</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/steam_fitting.jpg') }}">
+                    <img src="{{ url_for('static', filename='images/steam_fitting.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Steam fitting supplies</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h4>General hardware materials</h4>
+            <div id="product11" class="row">
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/general_hardware.jpg') }}" >
+                    <img src="{{ url_for('static', filename='images/general_hardware.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>General hardware materials</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/hardware.jpg') }}">
+                    <img src="{{ url_for('static', filename='images/hardware.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Hardware</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/wire.jpg') }}">
+                    <img src="{{ url_for('static', filename='images/wire.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Hardware materials</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h4>Manufacturing plants and equipment</h4>
+            <div id="product12" class="row">
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/manufacturing.jpg') }}" >
+                    <img src="{{ url_for('static', filename='images/manufacturing.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Manufacturing plants and equipment</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/manufacturing1.jpg') }}">
+                    <img src="{{ url_for('static', filename='images/manufacturing1.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Manufacturing plants and equipment</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/manufacturing3.jpg') }}">
+                    <img src="{{ url_for('static', filename='images/manufacturing3.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Manufacturing plants and equipment</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h4>Medical supplies and equipment</h4>
+            <div id="product13" class="row">
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/medical1.jpg') }}" >
+                    <img src="{{ url_for('static', filename='images/medical1.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Medical supplies and equipment</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/medical2.jpg') }}">
+                    <img src="{{ url_for('static', filename='images/medical2.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Medical supplies and equipment</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/medical-equipment.jpg') }}">
+                    <img src="{{ url_for('static', filename='images/medical-equipment.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Medical supplies and equipment</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h4>Cleaning agents and equipment</h4>
+            <div id="product14" class="row">
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/cleaning1.jpg') }}" >
+                    <img src="{{ url_for('static', filename='images/cleaning1.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Cleaning agents and equipment</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/cleaning2.jpg') }}">
+                    <img src="{{ url_for('static', filename='images/cleaning2.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Cleaning agents and equipment</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/cleaning3.jpg') }}">
+                    <img src="{{ url_for('static', filename='images/cleaning3.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Cleaning agents and equipment</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h4>CCTV Security and Bio-metric door access systems</h4>
+            <div id="product15" class="row">
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/cctv.webp') }}" >
+                    <img src="{{ url_for('static', filename='images/cctv.webp') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>CCTV Security</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/cctv1.webp') }}">
+                    <img src="{{ url_for('static', filename='images/cctv1.webp') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>CCTV Security</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/bio-metric-door.png') }}">
+                    <img src="{{ url_for('static', filename='images/bio-metric-door.png') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Bio-metric door system</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h4>Fresh & dry food stuffs and dairy products</h4>
+            <div id="product16" class="row">
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/dairy_products.jpg') }}" >
+                    <img src="{{ url_for('static', filename='images/dairy_products.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Fresh & dry food stuffs and dairy products </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/food2.jpg') }}">
+                    <img src="{{ url_for('static', filename='images/food2.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Fresh & dry food stuffs and dairy products</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/food3.jpg') }}">
+                    <img src="{{ url_for('static', filename='images/food3.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Fresh & dry food stuffs and dairy products</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h4>Electrical general supplies</h4>
+            <div id="product17" class="row">
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/electric.jpg') }}" >
+                    <img src="{{ url_for('static', filename='images/electric.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Electrical general supplies</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/electric1.jpeg') }}">
+                    <img src="{{ url_for('static', filename='images/electric1.jpeg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Electrical general supplies</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/electrical3.jpg') }}">
+                    <img src="{{ url_for('static', filename='images/electrical3.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Electrical general supplies</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h4>Electronics and accessories supplies</h4>
+            <div id="product18" class="row">
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/phone.jpg') }}" >
+                    <img src="{{ url_for('static', filename='images/phone.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Electronics and accessories supplies</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/fringe.jpg') }}">
+                    <img src="{{ url_for('static', filename='images/fringe.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Electronics and accessories supplies</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/electron.jpeg') }}">
+                    <img src="{{ url_for('static', filename='images/electron.jpeg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>Electronics and accessories supplies</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <h4>ICT and computers and accessories general supplies</h4>
+            <div id="product19" class="row">
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/electronic_gadgets.jpeg') }}" >
+                    <img src="{{ url_for('static', filename='images/electronic_gadgets.jpeg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>ICT and computers and accessories general supplies</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/ict.jpg') }}">
+                    <img src="{{ url_for('static', filename='images/ict.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>ICT and computers and accessories general supplies</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4 product">
+                <div class="thumbnail">
+                  <a href="{{ url_for('static', filename='images/mac.png') }}">
+                    <img src="{{ url_for('static', filename='images/mac.jpg') }}" alt="" style="width:100%;height: 150px;">
+                    <div class="caption">
+                      <p>ICT and computers and accessories general supplies</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <!-- end of products and services gallery -->
+  
+                    </div> <!-- end col -->
+                    
+                    <div class="col col-md-4 col-md-pull-8">
+                        <div class="service-single-sidebar">
+                      
+                            <div class="download-brocher-widget widget">
+                                <a href="{{ url_for('static', filename='images/comp-profile.pdf') }}"><i class="fa fa-file-pdf-o"></i> Company Profile</a>
+                            </div>
+                            <div class="widget contact-widget">
+                                <h3>Introductions</h3>
+                                <p><b>Kevin & Sons General Supply and Services</b> specializes in the provision of cost 
+                                  effective products and services all 
+                                  over Kenya. View some of our products below</p>
+                            </div>
+                        </div>
+                        <div class="products-and-services">
+                          <h4>Office supplies</h4>
+                          <ul>
+                              <li> Papers, Envelopes, Writing, Graphic Supplies, Desktop Accessories & Labels </li>
+                              <li> Books, Pads, Diaries, Organizers, Filing & Archival Storage</li>
+                              <li> Accounting, Personnel Files, Binders, Indices, Office Tapes & Adhesives </li>
+                              <li> Continuous Stationery, Clips & Fasteners.</li>
+                            </ul>
+                            <h4>Building construction materials</h4>
+                            <ul>
+                                <li> Fencing, Building Supplies, and Plastering Materials </li>
+                                <li> Plumbing Materials, Timber, Flooring, Doors & Windows</li>
+                                <li> Electrical Supplies, Bathrooms, Kitchens, Painting and Decorating Materials </li>
+                                <li> Sealants, Adhesives, Nails, Screws, Fixings and Scaffolding  </li>
+                            </ul>
+                            <h4>Stationery</h4>
+                            <ul>
+                              <li> Stapler,
+                                Eraser,
+                                Push-pin,
+                                Drawing pin (U.K)/ Thumbtack (U.S),
+                                Paper clip,
+                                Rubber stamp,
+                                Highlighter and
+                                Fountain pen. </li>
+                              
+                            </ul>
+                            <h4>Furniture and equipment supplies</h4>
+                            <ul>
+                                <li> Beds, sofa sets, cupboards, tables, chairs, desks and dressers</li>
+                            </ul>
+                            <h4>Water works, Tiling, Roofing and Plumbing materials</h4>
+                            <ul>
+                                <li> Pipes, Adaptor
+                                  ,Barb
+                                  ,Coupling
+                                  ,Cross
+                                  ,Double Tapped Bushing
+                                  ,Elbow and
+                                  Mechanical Sleeve </li>
+                                <li> Nipple,
+                                  Plug and Cap,
+                                  Reducer,
+                                  Tee,
+                                  Union,
+                                  Valve and
+                                  Wye</li>
+                                  <li> Tiles and iron sheets</li>
+                            </ul>
+                            <h4>Road construction material supplies</h4>
+                            <ul>
+                                <li> Aggregate, Asphalt and Bitumen, Concrete and Composite Pavement</li>
+                                <li>Cement, Cement Mortar and Cement Concrete</li>
+                                <li>Soil and Stone Aggregates</li>
+                            </ul>
+                            <h4>Industrial and institutional chemical supplies</h4>
+                            <ul>
+                                <li> Sodium, hydrochloric acid, magnesium, Iron, potassium and sodium hydroxide</li>
+                                <li> Barometer, thermometers, </li>
+                                <li> pipettes, scales, centrifuges, Bunsen burners, freezers, hot plates, 
+                                  incubators, coolers, stirrers, water baths, and fume hoods </li>
+                            </ul>
+                            <h4>Pest control and fumigation supplies and serices</h4>
+                            <ul>
+                                <li> Pest control software,
+                                  Respirator,
+                                  Other Safety Equipment,
+                                  UV Flashlight,
+                                  Foamer,
+                                  Termite Baiting Tools,
+                                  Duster and
+                                  Gloves.</li>
+                               <li>Bee Control,
+                                Backpack Sprayers,
+                                Pest Control Hose Reels,
+                                Pest Control Spray Hoses,
+                                Bed Bug Steamers,
+                                Pest Control Granulators and
+                                Professional Grade Pesticides.</li>
+                            </ul>
+                            <h4>Industrial safety</h4>
+                            <ul>
+                                <li> Safety glasses,
+                                  Hearing protection,
+                                  Safety gloves,
+                                  Face shield,
+                                  Safety helmets and
+                                  Safety shoes. </li>
+                                
+                            </ul>
+                            <h4>Steam and steam fitting supplies</h4>
+                            <ul>
+                                <li> Industrial Steam and Boiler equipment, Gate Valves, Stainless Steel, 
+                                  Pipes, Fittings, Pressure Gauges, Water and Oil Meters</li>
+                            </ul>
+                            <h4>General hardware materials</h4>
+                            <ul>
+                                <li> Timber and timber products,
+                                  Electrical items i.e. cables, switches, etc,
+                                  Steel (Building steel, BRC, nails, etc),
+                                  Resins and adhesives,
+                                  Oil and gas specific drill bits,
+                                  Polymer, bentonite and drill foam and
+                                  Hydraulic hoses and pipe fittings.</li>
+                                  <li>Nails, Iron sheets, Hammers, paints and door hinges</li>
+                            </ul>
+                            <h4>Manufacturing plants and equipment supplies</h4>
+                            <ul>
+                                <li> Liquid filling machines,
+                                  Packaging machines,
+                                  Laser cutting machines,
+                                  CNC machines,
+                                  Laser engraving machines and
+                                  CNC routers.</li>
+                                
+                            </ul>
+                            <h4>Medical supplies and equipment</h4>
+                            <ul>
+                                <li> Stethoscope and pocket diagnostic set,
+                                  Sphygmomanometer and infrared thermometer - sphygmomanometers should have calibration date stickers,
+                                  Pulse oximeter,
+                                  Glucometer including appropriate strips and lancets,
+                                  Alcohol wipes, gloves, lubricating jelly and
+                                  Alcohol gel for hands.</li>
+                                  <li> Hospital Stretchers. Transporting patients is very important 
+                                    when dealing with emergencies,
+                                    Defibrillators,
+                                    Anesthesia Machines,
+                                    Patient Monitors,
+                                    Sterilizers,
+                                    EKG/ECG Machines,
+                                    Surgical Tables and
+                                    Blanket and Fluid Warmers.</li>
+                                    <li> Bandage,
+                                      Bedpan,
+                                      Blood infusion set,
+                                      Cannula, intraveneous (separated),
+                                      Catheter, Foley,
+                                      Defibrillator,
+                                      Dialyser, hemodialysis and
+                                      Enema bag and enema bucket.</li>
+                            </ul>
+                            <h4>Cleaning agents and equipment</h4>
+                            <ul>
+                                <li> Sponges and scourers,
+                                  Yellow dusters/microfibre cloths,
+                                  Glass polishing cloths,
+                                  Cleaning brushes,
+                                  A mop and bucket,
+                                  A dustpan and brush,
+                                  Protective gloves and
+                                  A plastic caddy to carry the essentials </li>
+                                <li> Vacuum cleaner, with attachments for hardwood and carpet,
+                                  Bucket or container to carry supplies,
+                                  Mop and bucket,
+                                  Duster (both long and short),
+                                  Dustpan and broom,
+                                  Paper towels,
+                                  Microfibre cloths (have separate, color-coded ones for the kitchen 
+                                  and bathroom) and
+                                  Glass cleaning cloths.</li>
+                            </ul>
+                            <h4>CCTV Security and bio-metric door access systems</h4>
+                            <ul>
+                                <li> Supply and installation of CCTV Cameras</li>
+                                <li> Supply and installation of bio-metric door access systems</li>
+                            </ul>
+                            <h4>ICT and computers and accessories general supplies</h4>
+                            <ul>
+                                <li> Android phones, iOS phones, desktops and laptops</li>
+                                <li> </li>
+                                <li> Electrical Supplies, Bathrooms, Kitchens, Painting and Decorating Materials </li>
+                            </ul>
+                            <h4>Fresh and Dry food stuffs and diary products</h4>
+                            <ul>
+                                <li> Milk, cheese,  yoghurt, butter, ice cream and condensed and dried milk</li>
+                                <li> Oranges, bananas, pineapples, apples, avocados and guavas</li>
+                                <li> Beans, maize, peas, ground nuts, cashew nuts and macadamia</li>
+                                <li> Arrow roots, potatos, cabbages, sukuma wiki and onions</li>
+                            </ul>
+                            <h4>Electrical general supplies</h4>
+                            <ul>
+                                <li> Microcontroller,
+                                  Transformer,
+                                  Battery,
+                                  Fuse,
+                                  Relays,
+                                  Switches,
+                                  Motors and
+                                  Circuit Breakers. </li>
+                                
+                            </ul>
+                            <h4>Electronics and accessories supplies</h4>
+                            <ul>
+                                <li> Android phones, iOS phones, desktops and laptops </li>
+                                <li> Refrigerators, microwaves, Televisions, washing machines and Woofers</li>
+                                <li> Radios, tablet computers,
+                                  e-readers,
+                                  storage devices, such as flash drives,
+                                  input devices, such as keyboards, mice, and scanners and
+                                  output devices such as printers and speakers.</li>
+                            </ul>
+                          </div>
+                    </div>
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </section>
+        <!-- end service-single-section -->      
+{% endblock body %}
