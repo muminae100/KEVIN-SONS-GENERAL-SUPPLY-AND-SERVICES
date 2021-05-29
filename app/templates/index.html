@@ -154,8 +154,8 @@
                         </div>
                     </div>
 
-                    <div class="contact-form form">
-                        <form method="POST" id="contact-form" class="contact-validation-active" action="">
+                    <div >
+                        <form method="POST"  action="">
                             {{ form.hidden_tag() }}
                             <div>
                                 <div class="form-group">
@@ -218,12 +218,9 @@
                                     {% endif %}
                                 </div>
                             </div>
-                            <div class="submit-btn-wrap">
+                            <div>
                                 <div class="form-group">
                                     {{ form.submit(class="btn") }}
-                                </div>
-                                <div id="loader">
-                                    <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
                                 </div>
                             </div>
                         </form>
