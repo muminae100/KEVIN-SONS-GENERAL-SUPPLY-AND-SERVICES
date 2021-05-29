@@ -1,9 +1,26 @@
 from flask import render_template,redirect,request,url_for,flash,abort
 from app import app,mail
+from app.forms import RequestQuoteForm
+from flask_mail import Message
+
+
+
+def send_email(email,message,phonenumber,fullname):
+    msg = Message(f'Email from {email}, phone number: {phonenumber}', 
+                   sender=email,
+                   recipients=['smuminaetx100@gmail.com'])
+    msg.body = f'''
+Company name/Individual: {fullname}
+{message}
+'''
+    mail.send(msg)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    form = RequestQuoteForm()
+    if form.validate_on_submit():
+        send_email(email=form.email.data,phonenumber=form.phonenumber.data,fullname=form.fullname.data)
+    return render_template('index.html', form = form)
 
 @app.route('/about_us')
 def about():
