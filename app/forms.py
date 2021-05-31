@@ -1,6 +1,7 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField,SubmitField,TextAreaField,SelectField
-from wtforms.validators import DataRequired,Email,ValidationError
+from wtforms import StringField,SubmitField,TextAreaField,SelectField,PasswordField,BooleanField,FileField
+from wtforms.validators import DataRequired,Email,ValidationError,Length
+from flask_login import current_user
 
 
 class RequestQuoteForm(FlaskForm):
@@ -29,3 +30,19 @@ class RequestQuoteForm(FlaskForm):
      ])
     message = TextAreaField('Message', validators=[DataRequired()])
     submit = SubmitField('Submit')
+
+class LoginForm(FlaskForm):
+    email = StringField('Email', validators=[DataRequired(),Email()])
+    password = PasswordField('password',validators=[DataRequired()])
+    remember = BooleanField('Remember me')
+    submit = SubmitField('Login')
+
+
+class UpdateAccountForm(FlaskForm):
+    username = StringField('Username',
+    validators=[DataRequired(),Length(min=2,max=20)])
+    email = StringField('Email', validators=[DataRequired(),Email()])
+    picture = FileField('Update profile picture')
+    submit = SubmitField('Update')
+
+   

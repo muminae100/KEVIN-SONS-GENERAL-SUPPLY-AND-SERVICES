@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block body %}
+ <!-- start page-title -->
+ <section class="page-title">
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs-12">
+                <div class="title-breadcrumb">
+                    <h2>Career section</h2>
+                    <ol class="breadcrumb">
+                        <li><a href="{{ url_for('index') }}">Home</a></li>
+                        <li>Career section</li>
+                    </ol>
+                </div>
+            </div>
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+</section>        
+<!-- end page-title -->    
+
+<div>
+    {% with messages = get_flashed_messages(with_categories = true) %}
+        {% if messages %}
+            {% for category,message in messages %}
+                <div class="alert alert-{{category}}">
+                    {{message}}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    </div>
+
+<div style="text-align: center;padding: 20px;">
+    <h1>Career section</h1>
+    <p>Sorry no vacancies open now.</p>
+    <p>Try again later</p>
+</div>
+
+{% endblock body %}

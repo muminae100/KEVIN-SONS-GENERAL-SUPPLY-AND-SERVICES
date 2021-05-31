@@ -9,6 +9,8 @@ flask-mail = "*"
 email-validator = "*"
 gunicorn = "*"
 flask-wtf = "*"
+flask-login = "*"
+flask-sqlalchemy = "*"
 
 [dev-packages]
 

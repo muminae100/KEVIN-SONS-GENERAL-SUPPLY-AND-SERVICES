@@ -41,3 +41,11 @@ def contact():
         fullname=form.fullname.data,message=form.message.data,producttype=form.producttype.data)
         flash('Email has been send','info')
     return render_template('contact_us.html', title='Contact us', form=form)
+
+@app.route('/career_section')
+def careers():
+    return render_template('careers.html')
+
+@app.route('/admin_login')
+def admin_login():
+    return render_template('admin/admin_login.html')
