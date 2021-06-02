@@ -1,6 +1,6 @@
 {% extends "admin/admin_panel.html" %}
 {% block body %}
-<div>
+<div class="container">
     <form action="" method="POST">
         {{ form.hidden_tag() }}
             <fieldset class="form-group">
@@ -39,14 +39,9 @@
             <div class="form-group">
                 {{ form.submit(class="btn btn-outline-info") }}
                 <small class="text-muted ml-2">
-                    <a href="{{ url_for('reset_request') }}">Forgot Password?</a>
+                    <a href="">Forgot Password?</a>
                 </small>
             </div>
     </form>
-<div class="border-top pt-3">
-    <small class="text-muted">
-        Need An Account?<a class="ml-2" href="{{url_for('register')}}">Register here</a>
-    </small>
-</div>
 </div>
 {% endblock body %}

@@ -99,6 +99,9 @@
                             <li><a href="{{ url_for('products') }}">Our products and services</a></li>
                             <li><a href="{{ url_for('contact') }}">Contact us</a></li>
                             <li><a href="{{ url_for('careers') }}">Career section</a></li>
+                            {% if current_user.admin == True %}
+                            <li><a href="{{ url_for('admin_home') }}">Admin panel</a></li>
+                            {% endif %}
                         </ul>
                     </div><!-- end of nav-collapse -->
                     <div class="request-quote">

@@ -28,12 +28,14 @@
             {% endfor %}
         {% endif %}
     {% endwith %}
-    </div>
+</div>
 
 <div style="text-align: center;padding: 20px;">
     <h1>Career section</h1>
-    <p>Sorry no vacancies open now.</p>
-    <p>Try again later</p>
+    {% for career in careers %}
+    <h1>Available careers</h1>
+    <p>{{ career.name }}</p>
+    {% endfor %}
 </div>
 
 {% endblock body %}

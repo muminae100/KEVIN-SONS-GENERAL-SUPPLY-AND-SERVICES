@@ -14,9 +14,6 @@ class Users(db.Model, UserMixin):
     profile_pic = db.Column(db.String(20), nullable = False, default = 'avatar.png')
     password = db.Column(db.String(100), nullable = False)
     admin = db.Column(db.Boolean, nullable = False, default = False)
-    posts = db.relationship('Articles', backref = 'author', lazy = True)
-    the_comments = db.relationship('Comments', backref='writer',lazy=True)
-    post_author = db.Column(db.Boolean, nullable=False, default=False)
    
 
     def get_reset_token(self,expires_sec=3600):
@@ -35,3 +32,29 @@ class Users(db.Model, UserMixin):
 
     def __repr__(self):
         return str(self.username) + str(self.email) + str(self.profile_pic)
+        
+class Careers(db.Model):
+    id = db.Column(db.Integer,primary_key = True)
+    name = db.Column(db.String(100))
+    description = db.Column(db.String(255))
+
+    def __repr__(self):
+        return str(self.name) + str(self.description)
+
+
+class Company(db.Model):
+    id = db.Column(db.Integer,primary_key = True)
+    mission = db.Column(db.String(255))
+    vision = db.Column(db.String(255))
+    company_focus = db.Column(db.String(255))
+
+    def __repr__(self):
+        return str(self.mission) + str(self.vision)+ str(self.company_focus)
+
+
+class Images(db.Model):
+    id = db.Column(db.Integer,primary_key = True)
+    image = db.Column(db.String(55))
+
+    def __repr__(self):
+        return str(self.image)
