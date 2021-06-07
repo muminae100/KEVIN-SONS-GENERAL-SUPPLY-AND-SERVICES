@@ -14,3 +14,4 @@ jobs:
         server: ftp.kevinsonssupply.co.ke
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.password }}
+        server-dir: /public_html/kevinsonswebsite/
