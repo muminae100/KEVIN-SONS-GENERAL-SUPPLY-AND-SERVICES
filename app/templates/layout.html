@@ -68,14 +68,16 @@
                                 </ul>
                             </div>
                         </div>
+                        {% for contact in contacts %}
                         <div class="col col-sm-6">
                             <div class="contact-info">
                                 <ul>
-                                    <li><a href="tel:+254742000441"><i class="fa fa-phone"></i>(+254) 742000441 </a></li>
-                                    <li><a href="mailto:info@kevinsonssupply.co.ke"><i class="fa fa-envelope"></i> info@kevisonssupply.co.ke</a></li>
+                                    <li><a href="tel:+254742000441"><i class="fa fa-phone"></i>{{ contact.phone_number }} </a></li>
+                                    <li><a href="mailto:info@kevinsonssupply.co.ke"><i class="fa fa-envelope"></i> {{ contact.email }}</a></li>
                                 </ul>
                             </div>
                         </div>
+                        {% endfor %}
                     </div>
                 </div> <!-- end container -->
             </div> <!-- end topbar -->

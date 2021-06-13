@@ -1,0 +1,21 @@
+{% extends "admin/admin_panel.html" %}
+{% block body %}
+<div class="p-3">
+<h2>Company details</h2>
+{% for comp in company %}
+<h5>Our mission</h5>
+<p>{{ comp.mission }} <a class="btn btn-sm btn-primary" href="{{ url_for('update_mission') }}">Update mission</a></p>
+<h5>Our vision</h5>
+<p>{{ comp.vision }} <a class="btn btn-sm btn-primary" href="{{ url_for('update_vision') }}">Update vision</a></p>
+<h5>Our company focus</h5>
+<p>{{ comp.company_focus }} <a class="btn btn-sm btn-primary" href="{{ url_for('update_focus') }}">Update company focus</a></p>
+{% endfor %}
+<h2>Contact details</h2>
+{% for contact in contacts %}
+<h5>Phone number</h5>
+<p>{{ contact.phone_number }} <a class="btn btn-sm btn-primary" href="{{ url_for('update_phone') }}">Update phone number</a></p>
+<h5>Email</h5>
+<p>{{ contact.email }} <a class="btn btn-sm btn-primary" href="{{ url_for('update_email') }}">Update email</a></p>
+{% endfor %}
+</div>
+{% endblock %}

@@ -70,3 +70,7 @@ class UpdateCareerForm(FlaskForm):
     name = StringField('Career name', validators=[DataRequired()])
     description = StringField('Description')
     submit = SubmitField('Update career info')
+
+class CompanyDetailsResetForm(FlaskForm):
+    details = TextAreaField('Update content', validators=[DataRequired()])
+    submit = SubmitField('Update')

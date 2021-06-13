@@ -32,9 +32,11 @@
 
 <div style="text-align: center;padding: 20px;">
     <h1>Career section</h1>
+    <h3>Available careers</h3>
     {% for career in careers %}
-    <h1>Available careers</h1>
-    <p>{{ career.name }}</p>
+    <div class="bg-light">
+    <p><span class="text-info"> {{ career.name }}</span></p>
+    </div>
     {% endfor %}
 </div>
 

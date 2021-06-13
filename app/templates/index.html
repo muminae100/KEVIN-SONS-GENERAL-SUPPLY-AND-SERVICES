@@ -280,7 +280,7 @@
                             client in finding the right products, services or equipment at a sensible price.</p>
                     </div>
                 </div>   
-
+                {% for comp in company %}
                 <div class="row">
                     <div class="col col-xs-12">
                         <div class="work-process-content">
@@ -307,16 +307,7 @@
                                     </div>
                                     <div class="details">
                                         <h3>Our Mission</h3>
-                                        <p>To provide unparalleled quality services to our clients 
-                                        with a view to increasing their productivity and capacity by 
-                                        observing industry best practices.<br><br>
-                                        <b>Kevin & Sons General Supply and Services</b> is the leading 
-                                        supplies company in Kenya and we intend to stay there. 
-                                        Our management therefore decided that an itinerary was needed for sustained 
-                                        success and decided that a Visions & Values culture change programme be introduced. 
-                                        Our vision describes where we want to go and our values describe how we get there - 
-                                        and stay there.</p>
-
+                                        <p>{{ comp.mission }}</p>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="tab-2">
@@ -325,13 +316,7 @@
                                     </div>
                                     <div class="details">
                                         <h3>Our Vision</h3>
-                                        <p>Our aim is to remain the leading supplier in the region. 
-                                        To achieve this, a strong focus has been placed on quality 
-                                        of service to our customers. <b>Kevin & Sons General Supply and Services</b> is and 
-                                        will continue implementing best practices based on its vast 
-                                        experience and unique knowledge of the global market conditions. 
-                                        The result of this will ensure a superior quality of service that 
-                                        is customer focused and will benefit every customer.</p>
+                                        <p>{{ comp.vision }}</p>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="tab-3">
@@ -340,10 +325,7 @@
                                     </div>
                                     <div class="details">
                                         <h3>Company Focus</h3>
-                                        <p><b>Kevin & Sons General Supply and Services</b> ascent to market leadership
-                                             is the fruit of our perpetual focus and emphasis on high quality service delivery. 
-                                             We work diligently to meet the needs of each individual or corporate client with 
-                                             carefully tailored solutions based on industry best practices. </p>
+                                        <p>{{ comp.company_focus }}</p>
                                         <div class="detail-list">
                                         </div>
                                     </div>
@@ -351,7 +333,8 @@
                             </div>
                         </div>
                     </div>
-                </div>             
+                </div>    
+                {% endfor %}         
             </div> <!-- end container -->
         </section>
         <!-- end work-process-section -->
